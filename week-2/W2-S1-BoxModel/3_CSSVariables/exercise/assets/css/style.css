@@ -1,0 +1,126 @@
+:root {
+    /* colors variables */
+    --primary-color: #d90000;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+    --card-bg-color: #fff3f3;
+    --card-header-color: #333333;
+    --header-text-color: var(--bg-color);
+
+    /* other variables */
+    --card-padding: 20px;
+    --primari-font-family: Arial, sans-serif;
+    --h-font-family: Georgia, serif;
+    --card-border-radius: 20px;
+}
+
+/* Dark mode variables */
+.dark-mode {
+    --primary-color: #2e2e2e;
+    --text-color: #f1f1f1;
+    --bg-color: var(--primary-color);
+    --card-bg-color: #3e3d3d;
+    --card-header-color: var(--text-color);
+    --header-text-color: #cbc2c2;
+}
+/* Basic Page Styles */
+body {
+    font-family: var(--primari-font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    /* Hardcoded white */
+    color: var(--text-color);
+    /* Hardcoded black */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary-color);
+    /* Hardcoded red */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    /* Hardcoded white */
+    font-weight: bold;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    /* Hardcoded red */
+    color: var(--header-text-color);
+    /* Hardcoded white */
+    padding: 40px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--h-font-family);
+}
+
+.header-image {
+    width: 100%;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--bg-color);
+    /* Hardcoded white */
+}
+
+img {
+    max-height:fit-content;
+    width: 100%;
+}
+
+.box {
+    width: 40%;
+    padding: var(--card-padding);
+    background-color: var(--card-bg-color);
+    /* Light red background */
+    border: 2px solid var(--primary-color);
+    /* Hardcoded red border */
+    color: var(--primary-color);
+    /* Hardcoded red text */
+    text-align: center;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--border-shadow);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: var(--card-header-color);
+    font-family: var(--h-font-family);
+}
+
+.box p {
+    color: var(--text-color);
+    /* Hardcoded black text */
+}
+
+a.option {
+    color: var(--primary-color);
+    /* Hardcoded red */
+    text-decoration: none;
+    width: 50%;
+}

@@ -1,0 +1,20 @@
+section {
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    border: 15px solid black;
+    margin: auto;
+}
+img {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    
+    /* Margin property */
+    margin: 30px;
+    /* Padding property */
+    padding: 10px;
+    /* Border property */
+    
+    border: 9px solid darkblue;
+}
