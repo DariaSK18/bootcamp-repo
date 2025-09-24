@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="form__container">
+      <form action="POST">
+        <h3>Fill the form</h3>
+        <label for="name">
+          Name:
+
+          <input id="name" type="text" placeholder="Name" required="true" />
+        </label>
+        <label for="surname">
+          Surname:
+
+          <input id="surname" type="text" placeholder="Surname" />
+        </label>
+        <label for="email" aria-required="true">
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="s_smith@mail.com"
+            required="true"
+          />
+        </label>
+        <label for="password">
+          Password:
+
+          <input type="password" placeholder="Password" />
+        </label>
+        <label for="preference">
+          Delivery preference:
+
+          <select name="preference" id="preference">
+            <option selected disabled value="default">options</option>
+            <option value="safeplace">Safeplace</option>
+            <option value="neighbour">Neighbour</option>
+            <option value="pickup">Pickup</option>
+          </select>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

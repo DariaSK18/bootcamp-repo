@@ -24,7 +24,15 @@ h1 {
     margin-bottom: 20px;
     font-size: 24px;
 }
-
+h1::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4cae4c;
+    margin: 3px 10px;
+}
 .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -56,10 +64,16 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
-
+.email-label::before {
+    content: "✉️";
+    padding-right: 15px;
+}
+.phone-label::before {
+    content: "📞";
+    padding-right: 15px;
+}
 /* Pseudo-elements for Email and Phone Labels */
 /* Add ✉️ and 📞 icons before the labels */
-
 
 /* Styling the Terms and Conditions Link */
 .terms-link {
@@ -69,4 +83,10 @@ button:hover {
 }
 
 /* Add hover and visited states for the link */
+.terms-link:hover {
+    color: #4cae4c;
+}
+.terms-link:visited {
+    color: brown;
+}
 /* ::before pseudo-element for <h1> */
