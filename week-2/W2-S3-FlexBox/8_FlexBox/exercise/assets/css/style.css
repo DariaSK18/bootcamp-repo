@@ -16,6 +16,7 @@ header {
 /* Flexbox navigation */
 .navbar {
     /* TODO: explain the purpose of the following properties */
+    /* put the elements in the box to give them same gap and align them in the center */
     display: flex;
 
     justify-content: center;
@@ -39,6 +40,7 @@ header {
 .content {
     
     /* TODO: explain the purpose of the following properties */
+    /* helps the elements to go on a new line */
     flex-wrap: wrap;
     display: flex;
 
@@ -60,6 +62,7 @@ header {
     border-radius: 5px;
 
     /* TODO: explain the purpose of the following properties */
+    /* let the element grow and shrink, also flex basis gives the initial length of the element */
     flex: 1 1 200px;
 }
 
